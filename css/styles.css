@@ -1,0 +1,9 @@
+/* line 1, ../compass/sass/layout/_page.scss */
+body {
+  background: url("http://www.texturezine.com/wp-content/uploads/2014/05/blue-polygon.jpg") no-repeat fixed center;
+}
+
+/* line 11, ../compass/sass/styles.scss */
+img {
+  max-width: 100%;
+}
