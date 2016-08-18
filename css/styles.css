@@ -3,7 +3,41 @@ body {
   background: url("http://www.texturezine.com/wp-content/uploads/2014/05/blue-polygon.jpg") no-repeat fixed center;
 }
 
-/* line 11, ../compass/sass/styles.scss */
-img {
-  max-width: 100%;
+/* line 5, ../compass/sass/layout/_page.scss */
+li {
+  text-align: center;
+  color: #FFF;
+}
+
+/* line 9, ../compass/sass/layout/_page.scss */
+#menu ul {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+/* line 13, ../compass/sass/layout/_page.scss */
+#menu ul li {
+  float: left;
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+/* line 19, ../compass/sass/layout/_page.scss */
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 23, ../compass/sass/layout/_page.scss */
+.active a {
+  font-weight: bold;
+  color: red;
+}
+
+/* line 7, ../compass/sass/styles.scss */
+.tweet-content {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
 }

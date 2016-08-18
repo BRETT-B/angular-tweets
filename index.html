@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html ng-app="tweetApp">
 <head>
-	<!-- <style type="text/css" media="screen">
+
+	<style type="text/css" media="screen">
 		.active{
 			font-size: 50px;
 		}
-	</style> -->
+	</style>
+
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="css/styles.css">
+  	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+	<!-- Include aria and messages to make material happy -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+
+  	<!-- Angular Material Library -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
 	<script type="text/javascript" src="js/tweets.js"></script>
 	<script type="text/javascript" src="js/tweetModule.js"></script>
 	<script type="text/javascript" src="js/tweetController.js"></script>
 	<script type="text/javascript" src="js/homeController.js"></script>
-	<script type="text/javascript" src="js/trumpController.js"></script>
+	<!-- <script type="text/javascript" src="js/trumpController.js"></script> -->
+
 </head>
-<body ng-controller="tweetController">
-<!-- {{test}} -->
-<!-- {{tweets.prop}} -->
-<div class="tweet-container" ng-repeat="tweet in tweets">
-	<div>
-		<img ng-src="{{tweet.user.profile_background_image_url}}">
-		<div class="tweet-content">
-		<li>{{tweet.user.name}} tweeted {{tweet.text}}</li>
-		<li>Date: {{tweet.created_at}}</li>
+<body ng-controller="homeController" ng-init="showPrompt()">
+
+	<div id="menu">
+		<ul>
+			<li ng-class=home><a href="#">Home</a></li>	
+			<li ng-class=trump><a href="#/trump">Trump</a></li>
+			<li ng-class=hillary><a href="#/hillary">Hillary</a></li>
+		</ul>
 	</div>
-</div>
+	
+
+
+	<div ng-view></div>
+
 </body>
 </html>

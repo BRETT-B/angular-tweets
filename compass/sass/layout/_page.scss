@@ -1,3 +1,26 @@
 body {
+	
 	background: url('http://www.texturezine.com/wp-content/uploads/2014/05/blue-polygon.jpg') no-repeat fixed center;
+}
+li {
+	text-align: center;
+	color: #FFF;
+}
+#menu ul {
+	clear: both;
+	margin-bottom: 20px;
+}
+#menu ul li {
+	float: left;
+	list-style-type: none;
+	margin-left: 20px;
+	font-size: 28px;
+}	
+li a{
+	color: black;
+	text-decoration: none;
+}
+.active a{
+	font-weight: bold;
+	color: red;
 }

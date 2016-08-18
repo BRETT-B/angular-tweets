@@ -1,7 +1,4 @@
-<custom-menu></custom-menu>
-
-{{homePage}}
-
-<div ng-repeat = "tweet in tweets">
-	{{tweet.title}}
-</div>
+	<div class="" ng-repeat="tweet in tweets">
+		<img ng-src="{{tweet.user.profile_banner_url}}">
+		<li>CONTENT: {{tweet.text}}</li>
+	</div>

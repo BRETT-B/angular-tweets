@@ -1,7 +1,7 @@
 // Angular routes are consider cross-origin. Cross-origin is only supported for:
 // http, https, ftp. Our protocol when we load a page is "file:///"
 // This requires something with http, https, ftp, etc. at the beginning for the router to function.
-// Node js is our answer! With the connect module and teh serveStatic module, we can serve pages up at http://localhost
+// Node js is our answer! With the connect module and the serveStatic module, we can serve pages up at http://localhost
 // This involves:
 // 1. npm init -- this will create a package.json file in your folder. Package.json will make sure the node modules install locallay.
 // 1b. No prompts are required. YOu can just hit enter, otherwise it will fill the fields out.

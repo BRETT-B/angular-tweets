@@ -1,0 +1,22 @@
+{
+  "name": "angular-tweets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BRETT-B/angular-tweets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BRETT-B/angular-tweets/issues"
+  },
+  "homepage": "https://github.com/BRETT-B/angular-tweets#readme"
+}
